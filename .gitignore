@@ -1,0 +1,7 @@
+# Generated build directories and compilation database.
+/build/
+/build-*/
+/compile_commands.json
+
+# Local CMake preferences.
+/CMakeUserPresets.json
