@@ -31,7 +31,7 @@ ctest --test-dir build --output-on-failure
 ## 結構
 
 ```text
-.                                 # 專案根目錄
+.                                 
 ├── app/                          # CLI 應用程式
 │   └── main.cpp                  # 參數處理與文字輸出
 ├── include/linxray/              # 公開標頭
@@ -48,7 +48,7 @@ ctest --test-dir build --output-on-failure
 ├── README.md                     # 使用說明
 ├── .gitignore                    # Git 忽略規則
 ├── .gitattributes                # Git 換行設定
-└── build/                        # 自動產生的編譯檔案，不提交至 Git
+└── build/                       
 ```
 
 ## 資料流程
