@@ -1,10 +1,11 @@
 # linxray
 
-C++20 Linux 系統資訊 CLI，讀取 `/proc/meminfo`，顯示記憶體總量、可用量、已用量與使用率
+C++20 Linux 系統資訊 CLI，讀取 `/proc/meminfo`，顯示記憶體總量、可用量、已用量以及使用率
 
 ## 編譯
 
-需要 C++20 編譯器與 CMake 3.20 以上。Windows 先在 PowerShell 執行 `wsl -d Ubuntu`；以下指令皆在 Linux／WSL 的專案根目錄執行
+- 需 C++20 編譯器與 CMake 3.20 以上
+- Windows 先在 PowerShell 執行 `wsl -d Ubuntu`；以下指令皆在 Linux／WSL 的專案根目錄執行
 
 ```bash
 sudo apt update
@@ -19,8 +20,8 @@ cmake --build build
 ./build/linxray memory
 ./build/linxray --help
 ```
-
-修改程式後先執行 `cmake --build build`。已用量採 `MemTotal - MemAvailable`，單位為 GiB；WSL 中顯示的是 Linux 環境的數值
+- 修改程式後先執行 `cmake --build build`
+- 已用量採 `MemTotal - MemAvailable`，單位為 GiB；WSL 中顯示的是 Linux 環境的數值
 
 ## 測試
 
